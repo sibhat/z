@@ -405,7 +405,6 @@ it should always be at the center of the browser */
   transition: all 0.5s ease;
 }
 
-/** facebook insta icons style ends here ***/
 
             .cb-slideshow,
             .cb-slideshow:after { 
@@ -429,7 +428,7 @@ it should always be at the center of the browser */
                 background-repeat: none;
                 opacity: 0;
                 z-index: 0;
-                transform: scale(0.92);
+                transform: scale(0.96);
                 /* -webkit-backface-visibility: hidden; */
                 animation: imageAnimation 36s linear infinite 0s;
           }
@@ -630,7 +629,7 @@ it should always be at the center of the browser */
 	           opacity: 1;
           }
           
-          @media screen and (max-width: 400px) { 
+          @media screen and (max-width: 450px) { 
 	           .cb-slideshow
               
               li div h3 { font-size: 30px }

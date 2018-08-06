@@ -48,35 +48,12 @@ a{
     text-align: left;
 }
 
-/*
-.container > header h1{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	font-size: 35px;
-	line-height: 35px;
-	position: relative;
-	font-weight: 400;
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 0px 5px 0px;
+.hides{
+    display: none;
 }
-.container > header h1 span{
-
+.shows{
+    display: block;
 }
-.container > header h2, p.info{
-	font-size: 16px;
-	font-style: italic;
-	color: #f8f8f8;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-}
-*/
-
-
-
-
-/**  Background images slideshow ends here  */
-
-
-
 /**  MODAL effect starts  here  */
 .modal-content, .close{
     

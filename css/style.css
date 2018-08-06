@@ -104,6 +104,14 @@ a{
     margin: auto;
     padding-left: 200px;
 }
+.modal_list ul li{
+    text-align: start;
+    padding-left: 80px;
+    list-style: none;
+}
+.p_sm{
+    font-size: 12px;
+}
 @media (min-width: 300px){
     .modal_list{
         padding-left: 20px;
@@ -117,12 +125,7 @@ a{
     
     }
 }
-.modal_list ul li{
-    text-align: start;
-    padding-left: 80px;
-    list-style: none;
 
-}
 .modal.fade .modal-dialog {
    -webkit-transform: translate(0);
    -moz-transform: translate(0);

@@ -623,16 +623,6 @@ it should always be at the center of the browser */
                 transform: scale(1);
                 /* transform: scale(1.05) rotate(3deg); */
             }
-            50% {
-                opacity: 0;
-                transform: scale(1.1);
-                /* transform: scale(1.05) rotate(3deg); */
-            }
-            80% {
-                opacity: 0;
-                transform: scale(1.2);
-                /* transform: scale(1.05) rotate(3deg); */
-            }
             100% { opacity: 0 }
             }
           
@@ -663,26 +653,26 @@ it should always be at the center of the browser */
 	           opacity: 1;
           }
           
-          @media screen and (max-width: 1140px) { 
+          @media screen and (max-width: 400px) { 
 	           .cb-slideshow
               
               li div h3 { font-size: 30px }
-              .cb-slideshow li:nth-child(1) span{
+              .cb-slideshow li:nth-child(6) span{
                   background-image: url("../images/1-sm.jpg");
               }
-              .cb-slideshow li:nth-child(2) span{
+              .cb-slideshow li:nth-child(5) span{
                 background-image: url("../images/2-sm.jpg");
             }
-              .cb-slideshow li:nth-child(3) span{
+              .cb-slideshow li:nth-child(4) span{
                 background-image: url("../images/3-sm.jpg");
             }
-              .cb-slideshow li:nth-child(4) span{
+              .cb-slideshow li:nth-child(3) span{
                 background-image: url("../images/4-sm.jpg");
             }
-              .cb-slideshow li:nth-child(5) span{
+              .cb-slideshow li:nth-child(2) span{
                 background-image: url("../images/5-sm.jpg");
             }
-              .cb-slideshow li:nth-child(6) span{
+              .cb-slideshow li:nth-child(1) span{
                 background-image: url("../images/6-sm.jpg");               
                 background-position: top;
                 background-size:  cover;

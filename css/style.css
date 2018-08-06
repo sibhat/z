@@ -96,8 +96,20 @@ a{
     max-width: 100%;
     height: 600px;
     max-height: 100%;
-   
-   
+}
+.modal_list{
+    text-align: start;
+    list-style: none;
+    width: auto;
+    margin: auto;
+    padding-left: 200px;
+    
+}
+.modal_list ul li{
+    text-align: start;
+    padding-left: 80px;
+    list-style: none;
+
 }
 .modal.fade .modal-dialog {
    -webkit-transform: translate(0);
@@ -108,7 +120,7 @@ a{
 .modal-header {
     border-bottom: none;
     padding: 10px 20px 10px 10px;
-    background-image: url(../images/pattern2.png);
+    /* background-image: url(../images/pattern2.png); */
     height: 80px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +128,8 @@ a{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;}
+    border-bottom-right-radius: 0px;
+}
 
 
 .modal-footer{
@@ -484,7 +497,7 @@ to align it properly */
 
 /** facebook insta icons style ends here ***/
 
-.cb-slideshow,
+            .cb-slideshow,
             .cb-slideshow:after { 
                 position: fixed;
                 width: 100%;
@@ -494,14 +507,8 @@ to align it properly */
                 z-index: 0; 
           }
           
-          .cb-slideshow:after { 
-                content: '';
-              background: transparent url(../images/pattern.png) repeat top left;
-              
-          }
-          
           .cb-slideshow li span {
-                width: 100%;
+                width: 100vw;
                 height: 100%;
                 position: absolute;
                 top: 0px;
@@ -512,7 +519,8 @@ to align it properly */
                 background-repeat: none;
                 opacity: 0;
                 z-index: 0;
-                -webkit-backface-visibility: hidden;
+                transform: scale(0.92);
+                /* -webkit-backface-visibility: hidden; */
                 animation: imageAnimation 36s linear infinite 0s;
           }
           
@@ -553,12 +561,16 @@ to align it properly */
           
           .cb-slideshow li:nth-child(1) span { 
                 background-image: url("../images/6.jpg"); 
+                background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
           }
           
           
           .cb-slideshow li:nth-child(2) span {
                 background-image:  url("../images/5.jpg");
+                background-position: center;
+                background-size: contain;
                 background-repeat:no-repeat;
                 animation-delay: 6s;
             }
@@ -566,24 +578,32 @@ to align it properly */
           
           .cb-slideshow li:nth-child(3) span {
                 background-image:url("../images/4.jpg");
+                background-position: center;
+                background-size: cover;
                 background-repeat:no-repeat;
                 animation-delay: 12s;
           }
           
           .cb-slideshow li:nth-child(4) span {
                 background-image: url("../images/3.jpg");
+                background-size: cover;
+                background-position: center;
                 background-repeat:no-repeat;
                 animation-delay: 18s;
           }
           
           .cb-slideshow li:nth-child(5) span {
-                background-image: url("../images/2.png");
+                background-image: url("../images/2.jpg");
+                background-size: cover;
+                background-position: center;
                 background-repeat:no-repeat;
                 animation-delay: 24s;
           }
           
           .cb-slideshow li:nth-child(6) span {
                 background-image: url("../images/1.jpg");
+                background-position: center;
+                background-size: cover;
                 background-repeat:no-repeat;
                 animation-delay: 30s;
           }
@@ -653,20 +673,33 @@ to align it properly */
             @keyframes imageAnimation { 
             0% {
                 opacity: 0;
+                transform: scale(0.95);                
                 animation-timing-function: ease-in;
             }
             8% {
                 opacity: 1;
-                transform: scale(1.05);
+                transform: scale(0.98);
                 animation-timing-function: ease-out;
             }
             17% {
                 opacity: 1;
-                transform: scale(1.1) rotate(3deg);
+                /* transform: scale(1.05) rotate(3deg); */
+                transform: scale(1) ;
             }
             25% {
                 opacity: 0;
-                transform: scale(1.1) rotate(3deg);
+                transform: scale(1);
+                /* transform: scale(1.05) rotate(3deg); */
+            }
+            50% {
+                opacity: 0;
+                transform: scale(1.1);
+                /* transform: scale(1.05) rotate(3deg); */
+            }
+            80% {
+                opacity: 0;
+                transform: scale(1.2);
+                /* transform: scale(1.05) rotate(3deg); */
             }
             100% { opacity: 0 }
             }
